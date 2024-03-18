@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './slider.css';
 import MarqueeCard from './MarqueeCard';
+import Marque from './Marque';
 
 const images = [
       " https://media.geeksforgeeks.org/wp-content/uploads/20230406110516/Roadmap-for-Frontend-Development.webp",
@@ -48,6 +49,7 @@ const prevImage = () =>{
                                     <span className="visually-hidden">Next</span>
                               </button>
                         </div>
+                        <Marque/>
                         <MarqueeCard/>
             </>
       )
