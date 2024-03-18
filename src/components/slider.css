@@ -1,0 +1,83 @@
+.carousel-inner img{
+      height: 600px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+      height: 30px;
+      width: 30px;
+      outline: black;
+      background-color: rgba(74, 73, 73, 0.3);
+      background-size: 100%, 100%;
+      border-radius: 50%;
+      border: 1px solid black;
+  }
+  
+  .marquee-slide{
+      background-color: black;
+      padding: 10px;
+      color: aqua;
+      border-radius: 10px;
+      margin-right: 20px;
+  }
+  .about ,.frontend{
+      background-color: rgba(240, 228, 228, 0.868);
+      padding: 40px 20px;
+      border-radius: 20px;
+      margin-top: 30px;
+      border: 1px solid rgb(132, 131, 131);
+  }
+  .about img{
+      width: 500px;
+  }
+  .cards{
+    margin-top: 30px;
+  }
+  .card{
+    margin-right: 20px;
+  }
+  .card img{
+    width: 300px;
+  }
+  .frontend h2{
+    color: purple;
+    font-size: 1.5rem;
+  }
+  .frontend h3{
+    font-size: 1.2rem;
+    background-color: rgb(231, 159, 171);
+    width: 300px;
+    padding: 20px 10px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .frontend i{
+    margin-left: 130px;
+    font-size: 1.5rem;
+    color: purple;
+  }
+  .frontend a{
+    background-color: purple;
+    padding: 10px;
+    font-size: .9rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+  }
+  .card-slide{
+    width: 80%;
+  }
+  .slick-slide > div{
+    margin: 0 20px;
+  }
+  .card-slide img{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+  }
+  .card .image{
+    height: 150px;
+  }
+  .futureIt{
+    margin-top: 70px;
+    padding: 30px 10px;
+    /* background-color: rgb(112, 162, 255); */
+  }
