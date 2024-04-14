@@ -53,6 +53,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
+      // eslint-disable-next-line
       style={{ ...style, display: "block", background: "purple", color: "black", borderRadius: "50%", height: "25px", width: "25px", fontSize: "40px", display:"flex", justifyContent: "center", alignItems: "center" }}
       onClick={onClick}
     />
@@ -64,6 +65,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
+      // eslint-disable-next-line
       style={{ ...style, display: "block", background: "purple", color: "black", borderRadius: "50%", height: "25px", width: "25px",display:"flex", justifyContent: "center", alignItems: "center"  }}
       onClick={onClick}
     />

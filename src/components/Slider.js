@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 import './slider.css';
 import MarqueeCard from './MarqueeCard';
 import Marque from './Marque';
+import './Mediaquery.css';
+
 
 const images = [
       " https://media.geeksforgeeks.org/wp-content/uploads/20230406110516/Roadmap-for-Frontend-Development.webp",
@@ -12,15 +14,17 @@ const images = [
 ]
 
 function Slider() {
-      let [curr, setCurr] = useState(0);
+      const [curr, setCurr] = useState(0);
+      
 
 const nextImage = () =>{
       setCurr(curr===images.length-1? 0: curr+1);
+
 }
 const prevImage = () =>{
-      setCurr(curr===0? images.length-1: curr-1)
-}
+      setCurr(curr===0? images.length-1: curr-1);
 
+}
 
 
 

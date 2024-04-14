@@ -81,3 +81,34 @@
     padding: 30px 10px;
     /* background-color: rgb(112, 162, 255); */
   }
+  footer{
+    background-color: rgb(203, 189, 189);
+    padding: 10px;
+    margin-top: 20px;
+    color: black;
+    list-style: none;
+  }
+  .login-form input{
+    width: 350px;
+    margin-top: 20px;
+    padding:  5px;
+    border-radius: 10px;
+    border: 1px solid rgb(164, 163, 163);
+  }
+  .login-form label{
+    font-weight: 500;
+
+  }
+  .login-form #btn-submit{
+    width: 100px;
+    background-color:darkmagenta;
+    color: white;
+    border: none;
+  }
+  .contact input{
+    width: 250px;
+    margin: 10px;
+  }
+  .contact textarea{
+    margin: 10px;
+  }

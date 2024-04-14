@@ -7,6 +7,9 @@ import Layout from './components/Layout';
 import Slider from './components/Slider';
 import About from './components/About';
 import Contact from './components/Contact';
+import Frontend from './components/Frontend';
+import Login from './components/Login';
+import Register from './components/Register';
 
 const router = createBrowserRouter([
   {
@@ -19,14 +22,36 @@ const router = createBrowserRouter([
       },
        {
         path:"about",
-        element: <About/>
+        element:<About/>
 
       },
        {
         path:"contact",
         element:<Contact/>
 
-      }
+      },
+      {
+        path:"courses",
+        element:<Frontend/>
+
+      },
+      {
+        path:"register",
+        element:<Register/>
+
+      },
+      {
+        path: "login",
+        element: <Login/>
+      },
+      // {
+      //   path="/login">
+      //     {isLoggedIn ? (
+      //       <Redirect to="/" />
+      //     ) : (
+      //       <LoginForm onLogin={handleLogin} />
+      //     )}
+      // }
     ] 
   }
 ])
