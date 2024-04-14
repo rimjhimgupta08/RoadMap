@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 function Navbar () {
   
   
-  const userName =  JSON.parse(localStorage.getItem('user'));
+  // const userName =  JSON.parse(localStorage.getItem('user'));
   return (
     
     
@@ -12,7 +12,7 @@ function Navbar () {
   <div className="container">
     <Link className="navbar-brand" to="/"><img src="./image/it.jpeg" alt="" width='80px' /></Link>
 
-    <p className='text-center'>Welcome - {userName.name}</p>
+    // <p className='text-center'>Welcome - {userName.name}</p>
 
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -31,12 +31,7 @@ function Navbar () {
         <li className="nav-item">
           <NavLink className="nav-link" to="/courses" >Courses</NavLink>
         </li>
-        <li className="nav-item">
-          <NavLink className="nav-link " to="/login" >Login</NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink className="nav-link " to="/register" >SignUp</NavLink>
-        </li>
+       
         
         {/* <div>
       <h1>Welcome, {username}!</h1>
