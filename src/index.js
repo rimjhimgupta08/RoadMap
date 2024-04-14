@@ -8,7 +8,8 @@ import Slider from './components/Slider';
 import About from './components/About';
 import Contact from './components/Contact';
 import Frontend from './components/Frontend';
-
+import Login from './components/Login';
+import Register from './components/Register';
 
 const router = createBrowserRouter([
   {
@@ -34,7 +35,15 @@ const router = createBrowserRouter([
         element:<Frontend/>
 
       },
-      
+      {
+        path:"register",
+        element:<Register/>
+
+      },
+      {
+        path: "login",
+        element: <Login/>
+      },
       // {
       //   path="/login">
       //     {isLoggedIn ? (
