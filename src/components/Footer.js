@@ -10,7 +10,7 @@ const Footer = () => {
       
       <footer>
       <div className="container my-5 footer">
-            <div className="row">
+            <div className="row pt-5">
                   <div className="col-md-4 col-sm-6">
                   <img src="./image/it.jpeg" alt=""  width="200px" height="200px" className='rounded-circle'
                   />
@@ -21,8 +21,8 @@ const Footer = () => {
                               <h2>Courses here</h2>
                               <li>Frontend Development</li>
                               <li>Backend Development</li>
-                              <li>Data Scientist</li>
-                              <li>AI ML Learning</li>
+                              <li>Data Scientist - Coming Soon!!!</li>
+                              <li>AI ML Learning - Coming Soon!!!</li>
 
 
                               </div>
@@ -49,6 +49,16 @@ const Footer = () => {
 
                   </div>
             </div>
+      </div>
+      <div className="bottom-footer">
+            <div className="left">
+            Copyright@ Tech Skills Solution - 2024
+            </div>
+            <div className="right">
+            Designed By Rimjhim Gupta - 2024
+
+            </div>
+
       </div>
       </footer>
   )

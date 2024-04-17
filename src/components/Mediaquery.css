@@ -50,6 +50,18 @@
       .about .info p{
             font-size: .8rem;
       }
+      .navbar-collapse{
+            background-color: rgb(219, 52, 80) !important;
+            /* cursor: white; */
+            height: 400px;
+            z-index: 0;
+            display: block;
+            overflow: hidden;
+      }
+      .navbar-collapse .nav-item .nav-link{
+            color: white !important;
+            font-size: 1.3rem;
+      }
       
 }
 @media screen and (max-width:800px) {

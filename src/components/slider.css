@@ -83,7 +83,7 @@
   }
   footer{
     background-color: rgb(203, 189, 189);
-    padding: 10px;
+    /* padding: 10px; */
     margin-top: 20px;
     color: black;
     list-style: none;
@@ -111,4 +111,14 @@
   }
   .contact textarea{
     margin: 10px;
+  }
+  .bottom-footer{
+    background-color: rgb(157, 133, 133);
+    margin-bottom: -10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
   }

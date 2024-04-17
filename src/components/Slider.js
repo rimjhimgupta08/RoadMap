@@ -3,6 +3,7 @@ import './slider.css';
 import MarqueeCard from './MarqueeCard';
 import Marque from './Marque';
 import './Mediaquery.css';
+import Content from './Content';
 
 
 const images = [
@@ -55,6 +56,7 @@ const prevImage = () =>{
                         </div>
                         <Marque/>
                         <MarqueeCard/>
+                        <Content/>
             </>
       )
 }

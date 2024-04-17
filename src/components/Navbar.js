@@ -1,5 +1,7 @@
 import React  from 'react'
 import { Link, NavLink } from 'react-router-dom';
+import './Mediaquery.css';
+
 
 function Navbar () {
   
@@ -10,7 +12,7 @@ function Navbar () {
     
       <nav className="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-1  rounded">
   <div className="container">
-    <Link className="navbar-brand" to="/"><img src="./image/it.jpeg" alt="" width='80px' /></Link>
+    <Link className="navbar-brand" to="/"><img src="./image/it.jpeg" alt="" width='80px' /> Tech Skills</Link>
 
     {/* <p className='text-center'>Welcome - {userName.name}</p> */}
 
@@ -31,12 +33,12 @@ function Navbar () {
         <li className="nav-item">
           <NavLink className="nav-link" to="/courses" >Courses</NavLink>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <NavLink className="nav-link " to="/login" >Login</NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link " to="/register" >SignUp</NavLink>
-        </li>
+        </li> */}
         
         {/* <div>
       <h1>Welcome, {username}!</h1>
