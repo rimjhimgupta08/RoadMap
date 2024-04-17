@@ -1,12 +1,31 @@
-import React  from 'react'
+import React from 'react'
 import { Link, NavLink } from 'react-router-dom';
 import './Mediaquery.css';
+import { useNavigate } from 'react-router-dom';
+
 
 
 function Navbar () {
   
   
-  // const userName =  JSON.parse(localStorage.getItem('user'));
+  const userName =  JSON.parse(localStorage.getItem('user'));
+  const navigate = useNavigate();
+   
+  const loginHandle  = (e) =>{
+    e.preventDefault();
+    const loggeduser = JSON.parse(localStorage.getItem('user'));
+    if(loggeduser ===  loggeduser){
+      alert("you need to login")
+      
+          localStorage.setItem('loggedin', true)
+          navigate('/register');
+          
+    }else{
+          // alert("wrong email and password");
+          navigate('/courses');
+    }
+}
+
   return (
     
     
@@ -14,7 +33,7 @@ function Navbar () {
   <div className="container">
     <Link className="navbar-brand" to="/"><img src="./image/it.jpeg" alt="" width='80px' /> Tech Skills</Link>
 
-    {/* <p className='text-center'>Welcome - {userName.name}</p> */}
+    <p className='text-center'>Welcome - {userName.name}</p>
 
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -31,14 +50,14 @@ function Navbar () {
           <NavLink className="nav-link " to="/contact" >Contact</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/courses" >Courses</NavLink>
+          <NavLink className="nav-link" to="/courses" onClick={loginHandle} >Courses </NavLink>
         </li>
         {/* <li className="nav-item">
           <NavLink className="nav-link " to="/login" >Login</NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink className="nav-link " to="/register" >SignUp</NavLink>
         </li> */}
+        <li className="nav-item">
+          <NavLink className="nav-link " to="/register" >Login</NavLink>
+        </li>
         
         {/* <div>
       <h1>Welcome, {username}!</h1>

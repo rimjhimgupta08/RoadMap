@@ -30,7 +30,7 @@ const Contact = () => {
             <textarea name="" id="" cols="30" rows="5" placeholder='Enter Your Quiry'></textarea>
             </label>
             
-            <input type="submit" />
+            <input type="submit"  />
           </form>
         </div>
       </div>

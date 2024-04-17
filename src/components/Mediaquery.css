@@ -121,6 +121,9 @@
             width: 360px;
             text-align: center;
       }
+      .carousel img{
+            height: 200px;
+      }
 }
 @media screen and (max-width:400px) {
       .about img{
